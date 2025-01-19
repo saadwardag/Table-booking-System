@@ -1,0 +1,52 @@
+/* General Navigation Bar Styling */
+.site-nav {
+  background-color: #edefee;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.site-nav__item {
+  margin: 0 1rem;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: #495e57;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.site-nav__link:hover {
+  color: #f4ce14;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .site-nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-nav__item {
+    margin: 0.5rem 0;
+  }
+
+  .site-nav__link {
+    font-size: 0.9rem;
+  }
+}

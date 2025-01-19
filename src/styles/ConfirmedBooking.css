@@ -1,0 +1,102 @@
+/* General Styles for ConfirmedBooking */
+.confirmed-booking {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  min-height: 80vh;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Booking Details Section */
+.booking-details {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.booking-title {
+  font-family: 'Markazi Text', serif;
+  font-size: 2rem;
+  color: #495e57;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.summary-title {
+  font-size: 1.5rem;
+  color: #495e57;
+  margin-bottom: 1rem;
+}
+
+.summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #495e57;
+}
+
+.summary-list li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-description {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #495e57;
+}
+
+.menu-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #f4ce14;
+  color: #495e57;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-link:hover {
+  background-color: #e4b313;
+}
+
+/* Booking Image Section */
+.booking-image {
+  margin-left: 2rem;
+}
+
+.image-responsive {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .confirmed-booking {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .booking-details {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .booking-image {
+    display: none;
+  }
+
+  .menu-link {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

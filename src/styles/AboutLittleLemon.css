@@ -1,0 +1,133 @@
+/* About Section Styles */
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem;
+  background-color: #f8f8f8; /* Light gray background for subtle contrast */
+}
+
+.about-us__content {
+  flex: 1;
+  margin-right: 4rem;
+}
+
+.about-us__title {
+  font-family: 'Markazi Text', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #495E57;
+  margin-bottom: 1rem;
+}
+
+.about-us__location {
+  font-family: 'Markazi Text', serif;
+  font-size: 1.6rem;
+  color: #495E57;
+  margin-bottom: 1rem;
+}
+
+.about-us__description {
+  font-size: 1.1rem;
+  color: #495E57;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 800px; /* Added a max width for better text readability */
+}
+
+.about-us__images {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.about-us__image-main {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-us__image-main:hover {
+  transform: scale(1.05); /* Added hover effect for image zoom */
+}
+
+.about-us__image-overlap {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  position: absolute;
+  bottom: -60%;
+  left: -50px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-us__content {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .about-us__images {
+    position: relative;
+  }
+
+  .about-us__image-main,
+  .about-us__image-overlap {
+    width: 80%;
+  }
+
+  .about-us__image-overlap {
+    top: -20%;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    padding: 2rem 1rem;
+  }
+
+  .about-us__title {
+    font-size: 2.2rem;
+  }
+
+  .about-us__location {
+    font-size: 1.4rem;
+  }
+
+  .about-us__description {
+    font-size: 1rem;
+  }
+
+  .about-us__image-main,
+  .about-us__image-overlap {
+    width: 70%;
+  }
+
+  .about-us__image-overlap {
+    top: -15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us__image-main,
+  .about-us__image-overlap {
+    width: 100%;
+  }
+
+  .about-us__image-overlap {
+    top: -10%;
+  }
+}

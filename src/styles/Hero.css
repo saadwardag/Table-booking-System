@@ -1,0 +1,119 @@
+/* General Hero Section Styling */
+.hero-section {
+  display: flex;
+  flex-direction: column-reverse; /* Mobile-first design */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #495E57; /* Complementary color */
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-text-content {
+  text-align: center; /* Mobile-first alignment */
+  color: #EDEFEE; /* Light text for contrast */
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.hero-heading {
+  font-family: 'Markazi Text', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #F4CE14; /* Accent color */
+  margin-bottom: 10px;
+}
+
+.hero-location {
+  font-family: 'Markazi Text', serif;
+  font-size: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #F4CE14; /* Button color */
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #E0B800; /* Slightly darker yellow on hover */
+  transform: translateY(-2px);
+}
+
+/* Hero Image Styles */
+.hero-image-wrapper {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  margin-top: -20px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .hero-section {
+      padding: 50px 100px;
+  }
+
+  .hero-container {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .hero-text-content {
+      text-align: left;
+      margin-right: 180px;
+  }
+
+  .hero-image-wrapper {
+      margin-top: 0;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .hero-text-content {
+      text-align: center;
+  }
+
+  .hero-heading {
+      font-size: 2.5rem;
+  }
+
+  .hero-location {
+      font-size: 1.5rem;
+  }
+
+  .hero-button {
+      font-size: 1rem;
+      padding: 10px 15px;
+  }
+}
